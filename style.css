@@ -15,7 +15,7 @@
         margin-left: auto;
         margin-right: auto;        
     }
-    
+
     body{
         background-color: green;
     }
@@ -31,16 +31,21 @@
         display: flex;
     }
 
+    section.content {
+        background-color: blueviolet;
+        padding: 20px;
+
+    }
+
     section.index-page aside {
         
         flex:  0 0 175px;
         background-color: yellow;
         padding: 40px;
+        margin-left: auto;
+        order: 2;
     }
 
-    section.content {
-        background-color: blueviolet;
-        padding: 20px;
     }
 
 }
