@@ -1,3 +1,13 @@
+#cookie {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #fa0;
+    opacity: 50%;
+}
+
 @media screen and (min-width: 1280px) {
     body{
         background-color: green;
