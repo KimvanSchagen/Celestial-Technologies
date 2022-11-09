@@ -46,7 +46,39 @@
         order: 2;
     }
 
+    
+
+    #pc-tablet-menu ul {
+        list-style-type: none;
+        background-color: tomato;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
+
+    #pc-tablet-menu li {
+        float: left;
+        width: 25%;
+    }
+
+    #pc-tablet-menu li a {
+        display: block;
+        color: thistle;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+    }
+
+    #pc-tablet-menu li:hover {
+        background-color: yellowgreen;
+    }
+
+    #pc-tablet-menu a.active {
+        background-color: blue;
+    }
+
 
 }
 
@@ -145,7 +177,6 @@
     }
 
     h1 {
-        position: absolute;
         text-align: center;
     }
 
@@ -171,5 +202,30 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;        
+    }
+
+    #pc-tablet-menu ul {
+        list-style-type: none;
+        background-color: tomato;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #pc-tablet-menu li a {
+        display: block;
+        color: thistle;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #pc-tablet-menu li:hover {
+        background-color: yellowgreen;
+    }
+
+    #pc-tablet-menu a.active {
+        background-color: blue;
     }
 }
