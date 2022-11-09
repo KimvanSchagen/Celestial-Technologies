@@ -2,18 +2,113 @@
     body{
         background-color: green;
     }
+    #mobile-menu {
+        display: none;
+    }
 
 }
 
 @media screen and (max-width: 480px) {
+    #pc-tablet-menu {
+        display: none;
+    }
+
     body{
         background-color: blue;
+        overflow-x: hidden;
     }
     
+    label .menu {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        z-index: 100;
+        width: 200px;
+        height: 200px;
+        background: #FFF;
+        border-radius: 50% 50% 50% 50%;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+    }
+
+    label .hamburger {
+        position: absolute;
+        top: 135px;
+        left: 50px;
+        width: 30px;
+        height: 2px;
+        background: #69D2e7;
+        display: block;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+    }
+
+    label .hamburger:after, label .hamburger:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #69d2e7;
+    }
+
+    label .hamburger:before { top: -10px; }
+
+    label .hamburger:after { bottom: -10px; }
+
+    label input { display: none; }
+
+    label input:checked + .menu {
+        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        border-radius: 0;  
+    }
+
+    label input:checked + .menu .hamburger {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);        
+    }
+
+    label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;        
+    }
+      
+    label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+        
+    }
+      
+    label input:checked + .menu + ul { opacity: 1; }
+      
+    label ul {
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+    }
+      
+    label a {
+        margin-bottom: 1em;
+        display: block;
+        color: #f38630;
+        text-decoration: none;        
+    }
+
+    h1 {
+        position: absolute;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
     body{
         background-color: yellow;
+    }
+    #mobile-menu {
+        display: none;
     }
 }
