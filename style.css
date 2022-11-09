@@ -6,10 +6,18 @@
         display: none;
     }
 
+    #mobile-video {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     #pc-tablet-menu {
+        display: none;
+    }
+
+    #pc-tablet-video {
         display: none;
     }
 
@@ -109,6 +117,10 @@
         background-color: yellow;
     }
     #mobile-menu {
+        display: none;
+    }
+
+    #mobile-video {
         display: none;
     }
 }
