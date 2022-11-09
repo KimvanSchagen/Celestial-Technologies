@@ -20,6 +20,22 @@
         display: none;
     }
 
+    section.index-page {
+        display: flex;
+    }
+
+    section.index-page aside {
+        
+        flex:  0 0 175px;
+        background-color: yellow;
+        padding: 40px;
+    }
+
+    section.content {
+        background-color: blueviolet;
+        padding: 20px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
