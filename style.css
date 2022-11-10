@@ -256,4 +256,44 @@
     #pc-tablet-menu a.active {
         background-color: blue;
     }
+
+    .article4 {display: none;}
+    .product3 {display: none;}
+
+
+    .articles {
+        display: grid;
+        grid-template-areas:
+            "article1 article2"
+            "article1 article2"
+            "article3 article2"
+            "article3 article5"
+            "article3 article5"
+            "article3 article5"
+            "article6 article6"
+            "article6 article6";
+        background-color: indigo;
+    }
+
+    .articles article {
+        border: blueviolet 3px solid;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .asideProduct {
+        display: grid;
+        gap: 25px;
+        grid-template-areas: 
+        "product1 product2"
+        "product1 product2";
+    }
+
+    .asideProduct a {
+        border: yellowgreen 3px solid;
+    }
+    
+    .asideProduct a img {
+        width: 100%;
+    }
 }
