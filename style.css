@@ -215,6 +215,42 @@
     video {
         display: none;
     }
+
+    .article4 {display: none;}
+    .article6 {display: none;}
+
+    .articles {
+        display: grid;
+        grid-template-areas:
+            "article5"
+            "article3"
+            "article2"
+            "article1";
+        background-color: indigo;
+    }
+
+    .articles article {
+        border: blueviolet 3px solid;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .asideProduct {
+        display: grid;
+        gap: 25px;
+        grid-template-areas: 
+        "product1"
+        "product2"
+        "product3";
+    }
+
+    .asideProduct a {
+        border: yellowgreen 3px solid;
+    }
+    
+    .asideProduct a img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
