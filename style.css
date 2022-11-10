@@ -394,10 +394,40 @@
     }
 
     video {
+    .videoIndex video {
         display: block;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;        
+        width: 100%;        
+    }
+
+    #indexPage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #indexPage article {
+        padding: 10px;
+        overflow: auto; 
+        background-color: purple;       
+    }    
+
+    #indexPage article figure {
+        float: left;
+        margin: 0px 10px 10px 10px;        
+    }
+    #indexPage article figure img {
+        width: 375px;
+    }
+
+    .asideIndex {        
+        background-color: violet;
+        padding: 40px;      
+    }   
+    .videoIndex {order: 2;}
+    .asideIndex {order: 1;}
+    .contentIndex{ 
+        order: 3;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     #pc-tablet-menu ul {
@@ -408,13 +438,13 @@
         padding: 0;
     }
 
-
     #pc-tablet-menu li a {
         display: block;
         color: thistle;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        font-size: 1.25em;
     }
 
     #pc-tablet-menu li:hover {
