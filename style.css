@@ -18,6 +18,11 @@
 .product2 {grid-area: product2;}
 .product3 {grid-area: product3;}
 
+table {
+    border: 3px black solid;
+    caption-side: bottom;
+}
+
 @media screen and (min-width: 1280px) {
     main {
         width: 90%;
@@ -93,6 +98,24 @@
     }
     
     .asideProduct a img {
+        width: 100%;
+    }
+
+    .pricing {
+        display: grid;
+        grid-template-columns: 90% 10%;
+        gap: 10px;
+    }
+
+    .pricing table {
+        grid-column: 1;
+    }
+
+    .pricing aside {
+        grid-column: 2;
+    }
+
+    .pricing aside img {
         width: 100%;
     }
 
@@ -349,6 +372,14 @@
     .asideProduct a img {
         width: 100%;
     }
+
+    table {
+        width: 100%;        
+    }
+
+    .pricing aside img {
+        width: 100%;        
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
@@ -492,5 +523,18 @@
     
     .asideProduct a img {
         width: 100%;
+    }
+    
+    table {
+        width: 100%;        
+    }
+
+    .pricing aside img {
+        width: 49.5%;
+        
+    }
+
+    #pricingAside1 {
+        display: none;
     }
 }
