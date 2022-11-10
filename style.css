@@ -354,9 +354,43 @@
 @media screen and (min-width: 481px) and (max-width: 1279px) {
     body{
         background-color: yellow;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .websiteHeader {
+        height: 175px;
+        
+        display: flex;
+        align-items: center;
+    }
+
+    .websiteHeader::after {
+        content: "";
+        clear: both;
+        display: table;        
+    }
+
+    .websiteHeader img {
+        width: 100px;
+        padding: 1.5em 1.5em 1.5em 0;
+        max-width: 150px;
+    }
+
+    .websiteHeader h1 {
+        padding: 0.5em;
+        font-size: 2.5em;
+    }
+
+    .websiteHeader h2 {
+        position: absolute;
+        top: 125px;
+        left: 35%;
+    }
+
     #mobile-menu {
-        display: none;
+        display: none;        
     }
 
     video {
