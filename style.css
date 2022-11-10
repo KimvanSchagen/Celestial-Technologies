@@ -100,24 +100,43 @@
         display: none;
     }
 
-    section.index-page {
+    #indexPage {
         display: flex;
+        flex-wrap: wrap;
     }
 
-    section.content {
+    .contentIndex {
         background-color: blueviolet;
-        padding: 20px;
-
+        padding: 20px 0px 20px 0px;
+        margin-left: 3%;
+        width: 74%;
     }
 
-    section.index-page aside {
+    .contentIndex article {
+        overflow: auto;
+    }
+
+    #indexPage article figure {
+        float: right;
+        margin: 0px 10px 10px 10px;
         
+    }
+    #indexPage article figure img {
+        width: 400px;
+    } 
+
+    .asideIndex {        
         flex:  0 0 175px;
         background-color: yellow;
         padding: 40px;
         margin-left: auto;
         order: 2;
-    }    
+    } 
+    
+    .videoIndex video{
+        display: block;
+        width: 100%;
+    }
 
     #pc-tablet-menu ul {
         list-style-type: none;
@@ -139,7 +158,7 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        
+        font-size: 1.5vw;
     }
 
     #pc-tablet-menu li:hover {
