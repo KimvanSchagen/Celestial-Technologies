@@ -181,7 +181,26 @@
 
     body{
         background-color: blue;
-        overflow-x: hidden;
+        
+    }
+
+    .websiteHeader img {
+        width: 75px;
+        float: left;
+        padding-right: 5px;
+    }
+    .websiteHeader h1 {
+        font-size: 1.5em;
+        line-height: 0.5;
+        padding-top: 15px;
+    }
+
+    .websiteHeader h2 {
+        font-size: 1.25em;
+        line-height: 0.5;
+        padding-bottom: 15px;
+    }
+
     }
     
     label .menu {
