@@ -1,139 +1,151 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Celestial Technologies</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <img src="img/logo.png" title="Logo" alt="Logo"/>
-            <h1>Celestial Technologies</h1>
-            <h2>Motor skills analytics</h2>   
-        </header>
 
-        <nav id="pc-tablet-menu">
+<head>
+    <meta charset="utf-8" />
+    <title>Celestial Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="websiteHeader">
+        <img src="img/logo.png" title="Logo" alt="Logo" />
+        <h1>Celestial Technologies</h1>
+        <h2>Motor skills analytics</h2>
+    </header>
+
+    <nav id="pc-tablet-menu">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="mobile-menu">
+        <label>
+            <input type="checkbox" />
+            <span class="menu"> <span class="hamburger"></span> </span>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">Product</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        
-        <nav id="mobile-menu">
-            <label>
-                <input type="checkbox"/>
-                <span class="menu"> <span class="hamburger"></span> </span>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </label> 
-        </nav>  
+        </label>
+    </nav>
 
-        <main>
-            <section>
-                <video autoplay muted loop>
-                    <source src="img/Promotion-movie-sport-tech-pc-tablet.mp4" type="video/mp4">
-                    <source src="img/Promotion-movie-sport-tech-pc-tablet.ogg" type="video/ogg">
-                </video>
-            </section>
+    <main id="indexPage">
+        <section class="videoIndex">
+            <video autoplay muted loop>
+                <source src="img/Promotion-movie-sport-tech-pc-tablet.mp4" type="video/mp4">
+                <source src="img/Promotion-movie-sport-tech-pc-tablet.ogg" type="video/ogg">
+            </video>
+        </section>
 
-            <section class="index-page">
-                <aside>
-                    <h1>5 best sport innovations:</h1>
-                    <ol>
-                        <li>Performance Analytics</li>
-                        <li>Fan Engagement</li>
-                        <li>Smart Stadium</li>
-                        <li>eSports</li>
-                        <li>Immersive Training</li>
-                    </ol>
-                </aside>
 
-                <section class="content">
-                    <article>
-                        <header>
-                            <h1>Smart Goggles</h1>
-                            <p>Get stronger, faster, and more efficient with these smart goggles</p>
-                        </header>
-                        <figure>
-                            <a href="product.html"><img src="img/smartGoggles.png" alt="Smart Goggles"/></a> 
-                            <figcaption>&copy;FormSwim</figcaption>
-                        </figure>  
-                        <p>
-                            As technology advances, we can observe a need to Integrate the latest technologies in the sport sector to create competitive advantages. One of these 
-                            technologies is the ‘smart goggles’, which is a combination of the latest wearable technologies and analytics. As the name suggests, the device is a 
-                            high-tech pair of goggles developed for swimmers. It is meant to replace a coach by observing and analyzing an athlete’s technique and performance and 
-                            generate strategies for improvement. The device itself features a display and sensors. Its data can be synced to a smart device of your choosing. An 
-                            athlete can use these goggles to get accurate data about their form and find ways to improve. 
-                        </p>                                              
-                        <footer>
-                            <p>
-                                <a href="https://eu.formswim.com/">For more information, Click here!</a>  
-                            </p>                              
-                        </footer>
-                    </article>
+        <aside class="asideIndex">
+            <h1>5 best sport innovations:</h1>
+            <ol>
+                <li>Performance Analytics</li>
+                <li>Fan Engagement</li>
+                <li>Smart Stadium</li>
+                <li>eSports</li>
+                <li>Immersive Training</li>
+            </ol>
+        </aside>
 
-                    <article>
-                        <header>
-                            <h1>Smart Running Socks</h1>
-                            <p>Identify problems, achieve goals, and impove your performance with these smart socks </p>
-                        </header>
-                        <figure>
-                            <a href="product.html"><img src="img/smartSock.jpg" alt="Smart Sock"/></a>
-                            <figcaption>&copy;SensoriaFitness</figcaption>
-                        </figure>
-                        <p>
-                            As winning and losing in sports like competitive running and sprints is often a matter of a few seconds, one can imagine the need to innovate one’s 
-                            footing. The product ‘sensor socks’ serves exactly this purpose. The socks help athletes improve their performance using sensors and data analytics. These 
-                            socks are infused with several textile sensors that measure the different parameters of cadence, foot landing technique and impact as an athlete runs. 
-                            This information is then processed by a virtual coaching algorithm developed by the company which in turn provides the athlete with steps they can take to 
-                            improve their performance.  
-                        </p>
-                        <footer>
-                            <p>
-                                <a href="https://www.sensoriafitness.com/">For more information, Click here!</a>                                 
-                            </p>                                 
-                        </footer>
-                    </article>
+        <section class="contentIndex">
+            <article class="article1">
+                <figure>
+                    <a href="product.html"><img src="img/smartGoggles.png" alt="Smart Goggles" /></a>
+                    <figcaption>&copy;FormSwim</figcaption>
+                </figure>
+                <header>
+                    <h1>Smart Goggles</h1>
+                    <p>Get stronger, faster, and more efficient with these smart goggles</p>
+                </header>
+                <p>
+                    As technology advances, we can observe a need to Integrate the latest technologies in the sport
+                    sector to create competitive advantages. One of these
+                    technologies is the ‘smart goggles’, which is a combination of the latest wearable technologies and
+                    analytics. As the name suggests, the device is a
+                    high-tech pair of goggles developed for swimmers. It is meant to replace a coach by observing and
+                    analyzing an athlete’s technique and performance and
+                    generate strategies for improvement. The device itself features a display and sensors. Its data can
+                    be synced to a smart device of your choosing. An
+                    athlete can use these goggles to get accurate data about their form and find ways to improve.
+                </p>
+                <footer>
+                    <p>
+                        <a href="https://eu.formswim.com/">For more information, Click here!</a>
+                    </p>
+                </footer>
+            </article>
 
-                    <article>
-                        <header>
-                            <h1>Punch Tracker</h1>
-                            <p>Unlocking your full punch potential with this Punch Tracker</p>
-                        </header>
-                        <figure>
-                            <a href="product.html"><img src="img/punchTracker.jpg" alt="Punch Tracker"/></a>
-                            <figcaption>&copy;Hykso</figcaption>
-                        </figure>
-                        <p>
-                            Any boxer can express the importance of the cadence, impact, speed and endurance of their punches during a fight. The product ‘punch trackers’ is an 
-                            innovation for pro boxers designed to coach them. Much like other integrations involving wearable technology and analytics, it analyses a boxer’s 
-                            performance and feeds the data in an analyzer to produce some strategy for the boxer. The interesting thing to note is that with a punch tracker, one can 
-                            train individually at their home without requiring a sparring partner or a coach.  
-                        </p>                        
-                        <footer>
-                            <p>
-                                <a href="https://shop.hykso.com/">For more information, Click here!</a> 
-                            </p>                                                   
-                        </footer>
-                    </article>
-                </section>                
-            </section>
+            <article class="article2">
+                <figure>
+                    <a href="product.html"><img src="img/smartSock.jpg" alt="Smart Sock" /></a>
+                    <figcaption>&copy;SensoriaFitness</figcaption>
+                </figure>
+                <header>
+                    <h1>Smart Running Socks</h1>
+                    <p>Identify problems, achieve goals, and impove your performance with these smart socks </p>
+                </header>
+                <p>
+                    As winning and losing in sports like competitive running and sprints is often a matter of a few
+                    seconds, one can imagine the need to innovate one’s
+                    footing. The product ‘sensor socks’ serves exactly this purpose. The socks help athletes improve
+                    their performance using sensors and data analytics. These
+                    socks are infused with several textile sensors that measure the different parameters of cadence,
+                    foot landing technique and impact as an athlete runs.
+                    This information is then processed by a virtual coaching algorithm developed by the company which in
+                    turn provides the athlete with steps they can take to
+                    improve their performance.
+                </p>
+                <footer>
+                    <p>
+                        <a href="https://www.sensoriafitness.com/">For more information, Click here!</a>
+                    </p>
+                </footer>
+            </article>
 
-            <section id="cookie">
-                <p>Cookie statement</p>
-            </section>            
-        </main>
-        <footer>
-            <p>
-                &copy;Kim van schagen
-            </p>
-        </footer>
+            <article class="article3">
+                <figure>
+                    <a href="product.html"><img src="img/punchTracker.jpg" alt="Punch Tracker" /></a>
+                    <figcaption>&copy;Hykso</figcaption>
+                </figure>
+                <header>
+                    <h1>Punch Tracker</h1>
+                    <p>Unlocking your full punch potential with this Punch Tracker</p>
+                </header>
+                <p>
+                    Any boxer can express the importance of the cadence, impact, speed and endurance of their punches
+                    during a fight. The product ‘punch trackers’ is an
+                    innovation for pro boxers designed to coach them. Much like other integrations involving wearable
+                    technology and analytics, it analyses a boxer’s
+                    performance and feeds the data in an analyzer to produce some strategy for the boxer. The
+                    interesting thing to note is that with a punch tracker, one can
+                    train individually at their home without requiring a sparring partner or a coach.
+                </p>
+                <footer>
+                    <p>
+                        <a href="https://shop.hykso.com/">For more information, Click here!</a>
+                    </p>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <section id="cookie">
+        <p>Cookie statement</p>
+    </section>
+    <footer>
+        <p>
+            &copy;2022 Kim van schagen
+        </p>
+    </footer>
 
-    </body>
+</body>
+
 </html>
