@@ -8,12 +8,17 @@
     opacity: 50%;
 }
 
-@media screen and (min-width: 1280px) {
-    video {
-        display: block; 
-        width: 100%;      
-    }
+.article1 {grid-area: article1;}
+.article2 {grid-area: article2;}
+.article3 {grid-area: article3;}
+.article4 {grid-area: article4;}
+.article5 {grid-area: article5;}
+.article6 {grid-area: article6;}
+.product1 {grid-area: product1;}
+.product2 {grid-area: product2;}
+.product3 {grid-area: product3;}
 
+@media screen and (min-width: 1280px) {
     main {
         width: 90%;
         margin-left: auto;
