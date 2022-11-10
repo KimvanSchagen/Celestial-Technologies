@@ -201,6 +201,30 @@
         padding-bottom: 15px;
     }
 
+    #indexPage {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contentIndex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contentIndex article figure img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contentIndex article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentIndex article figure {
+        order: 2;
     }
     
     label .menu {
