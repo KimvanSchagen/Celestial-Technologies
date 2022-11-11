@@ -6,33 +6,90 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <img src="img/logo.png" title="Logo" alt="Logo"/>
+        <header class="websiteHeader">
+            <img src="img/logo.png" title="Logo" alt="Logo" />
             <h1>Celestial Technologies</h1>
             <h2>Motor skills analytics</h2>
-            <nav>
+        </header>
+    
+        <nav id="pc-tablet-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a class="active"href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <nav id="mobile-menu">
+            <label>
+                <input type="checkbox" />
+                <span class="menu"> <span class="hamburger"></span> </span>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="product.html">Product</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-        </header>
+            </label>
+        </nav>
+
         <main>
-            <form method="post", action="">
-                <label for="visitorName">Name</label>
-                <input id="visitorName" type="text" name="name" required="required"  autofocus="autofocus"/>
-                <label for="email">E-Mail</label>
-                <input id="email" type="email" name="email" required="required"/>
-                <label for="message">Message: </label>
-                <textarea id="message" name="message"></textarea>
-                <input type="submit" value="Submit"/>
-            </form>
+            <section id="contactContent">
+                <h1>Contact information</h1>
+                <p>E-mail address: 704098@student.inholland.nl</p>
+                <p>Telephone number: 06 28 84 49 91</p>
+                <h1>Contact us</h1>
+                <form method="post">
+                    <fieldset>                        
+                        <legend>Personal Detials</legend>
+    
+                        <fieldset>
+                            <legend>Title</legend>
+                            <label for="visitorTitle-mr">Mr</label>
+                            <input id="visitorTitle-mr" type="radio" name="title" value="mr"/>
+                            <label for="visitorTitle-mrs">Mrs</label>
+                            <input id="visitorTitle-mrs" type="radio" name="title" value="mrs"/>
+                            <label for="visitorTitle-other">Other</label>
+                            <input id="visitorTitle-other" type="radio" name="title" value="other"/>
+                        </fieldset>                    
+    
+                        <label for="visitorName">Name</label>
+                        <input id="visitorName" type="text" name="name" required="required"/>
+    
+                        <label for="email">E-Mail</label>
+                        <input id="email" type="email" name="email" required="required"/>
+    
+                        <label for="telephone">Telephone number</label>
+                        <input id="telephone" type="tel" name="telephone"/>
+    
+                        <label for="website">Your website address</label>
+                        <input id="website" type="url" name="website"/>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Message: </legend>
+                        <label for="message"></label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </section>
+            
+            <aside id="asideContact">
+                <a href="https://www.inholland.nl/"><img src="img/smartGoggles.png" alt="Smart Goggles" /></a>
+                <a href="https://www.inholland.nl/"><img src="img/smartSock.jpg" alt="Smart Sock" /></a>
+                <a href="https://www.inholland.nl/"><img src="img/punchTracker.jpg" alt="Punch Tracker" /></a>
+            </aside> 
         </main>
+
+        <section id="cookie">
+            <p>Cookie statement</p>
+        </section>
+
         <footer>
             <p>
-                &copy;Kim van schagen
+                &copy;2022 Kim van schagen
             </p>
         </footer>
     </body>
