@@ -19,8 +19,24 @@
 .product3 {grid-area: product3;}
 
 table {
-    border: 3px black solid;
+    border: 3px #000 solid;
     caption-side: bottom;
+}
+
+body {
+    background-color: #FF775F;
+} 
+
+main {
+    background-color: #FFF;
+}
+
+#pc-tablet-menu li:hover {
+    background-color: #A02809;
+}
+
+#pc-tablet-menu a.active {
+    background-color: #00137F;
 }
 
 @media screen and (min-width: 1280px) {
@@ -60,11 +76,7 @@ table {
         position: absolute;
         top: 125px;
         left: 35%;
-    }
-
-    body{
-        background-color: green;
-    }    
+    }     
 
     .articles {
         display: grid;
@@ -75,12 +87,10 @@ table {
             "article5 article1 article4"
             "article5 article1 article4"
             "article5 article1 article4"
-            "article5 article6 article6";
-        background-color: indigo;
+            "article5 article6 article6";        
     }
 
-    .articles article {
-        border: blueviolet 3px solid;
+    .articles article {        
         padding: 10px;
         margin: auto;
     }
@@ -91,11 +101,7 @@ table {
         grid-template-areas: 
         "product1 product2 product3"
         "product1 product2 product3";
-    }
-
-    .asideProduct a {
-        border: yellowgreen 3px solid;
-    }
+    }    
     
     .asideProduct a img {
         width: 100%;
@@ -128,8 +134,7 @@ table {
         flex-wrap: wrap;
     }
 
-    .contentIndex {
-        background-color: blueviolet;
+    .contentIndex {        
         padding: 20px 0px 20px 0px;
         margin-left: 3%;
         width: 74%;
@@ -150,7 +155,7 @@ table {
 
     .asideIndex {        
         flex:  0 0 175px;
-        background-color: yellow;
+        background-color: #AD3232;
         padding: 40px;
         margin-left: auto;
         order: 2;
@@ -163,7 +168,7 @@ table {
 
     #pc-tablet-menu ul {
         list-style-type: none;
-        background-color: tomato;
+        background-color: #ff2600;
         overflow: hidden;
         margin: 0;
         padding: 0;
@@ -177,20 +182,12 @@ table {
 
     #pc-tablet-menu li a {
         display: block;
-        color: thistle;
+        color: #FFF;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 1.5vw;
-    }
-
-    #pc-tablet-menu li:hover {
-        background-color: yellowgreen;
-    }
-
-    #pc-tablet-menu a.active {
-        background-color: blue;
-    }
+    }   
 
     #contactContent {
         width: 70%;
@@ -206,6 +203,13 @@ table {
         width: 100%;
     }
 
+    body > footer {
+        display: block;
+        background-color: #FFF;
+        padding: 30px;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -218,7 +222,7 @@ table {
     }
 
     body{
-        background-color: blue;
+        background-color: #FFF;
         
     }
 
@@ -272,11 +276,8 @@ table {
         z-index: 100;
         width: 85px;
         height: 85px;
-        background: black;
-        
-        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-        cursor: pointer;
-        overflow:hidden;
+        background: #ff2600;        
+        cursor: pointer;        
     }
 
     label .hamburger {
@@ -285,7 +286,7 @@ table {
         right: 30px;
         width: 30px;
         height: 2px;
-        background: #69D2e7;
+        background: #FFF;
         display: block;
         -webkit-transform-origin: center;
         transform-origin: center;
@@ -297,7 +298,7 @@ table {
         display: block;
         width: 100%;
         height: 100%;
-        background: #69d2e7;
+        background: #FFF;
     }
 
     label .hamburger:before { top: -10px; }
@@ -343,7 +344,7 @@ table {
     label a {
         margin-bottom: 1em;
         display: block;
-        color: #f38630;
+        color: #000;
         text-decoration: none; 
         font-size: 2em;       
     }
@@ -361,12 +362,10 @@ table {
             "article5"
             "article3"
             "article2"
-            "article1";
-        background-color: indigo;
+            "article1";        
     }
 
-    .articles article {
-        border: blueviolet 3px solid;
+    .articles article {        
         padding: 10px;
         margin: auto;
     }
@@ -378,11 +377,7 @@ table {
         "product1"
         "product2"
         "product3";
-    }
-
-    .asideProduct a {
-        border: yellowgreen 3px solid;
-    }
+    }    
     
     .asideProduct a img {
         width: 100%;
@@ -406,16 +401,14 @@ table {
 }
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
-    body{
-        background-color: yellow;
+    body{        
         width:90%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .websiteHeader {
-        height: 175px;
-        
+        height: 175px;        
         display: flex;
         align-items: center;
     }
@@ -459,8 +452,7 @@ table {
 
     #indexPage article {
         padding: 10px;
-        overflow: auto; 
-        background-color: purple;       
+        overflow: auto;              
     }    
 
     #indexPage article figure {
@@ -471,8 +463,7 @@ table {
         width: 375px;
     }
 
-    .asideIndex {        
-        background-color: violet;
+    .asideIndex {              
         padding: 40px;      
     }   
     .videoIndex {order: 2;}
@@ -485,7 +476,7 @@ table {
 
     #pc-tablet-menu ul {
         list-style-type: none;
-        background-color: tomato;
+        background-color: #ff2600;
         overflow: hidden;
         margin: 0;
         padding: 0;
@@ -493,20 +484,12 @@ table {
 
     #pc-tablet-menu li a {
         display: block;
-        color: thistle;
+        color: #FFF;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 1.25em;
-    }
-
-    #pc-tablet-menu li:hover {
-        background-color: yellowgreen;
-    }
-
-    #pc-tablet-menu a.active {
-        background-color: blue;
-    }
+    }   
 
     .article4 {display: none;}
     .product3 {display: none;}
@@ -522,12 +505,10 @@ table {
             "article3 article5"
             "article3 article5"
             "article6 article6"
-            "article6 article6";
-        background-color: indigo;
+            "article6 article6";        
     }
 
-    .articles article {
-        border: blueviolet 3px solid;
+    .articles article {        
         padding: 10px;
         margin: auto;
     }
@@ -538,11 +519,7 @@ table {
         grid-template-areas: 
         "product1 product2"
         "product1 product2";
-    }
-
-    .asideProduct a {
-        border: yellowgreen 3px solid;
-    }
+    }    
     
     .asideProduct a img {
         width: 100%;
