@@ -191,6 +191,21 @@ table {
     #pc-tablet-menu a.active {
         background-color: blue;
     }
+
+    #contactContent {
+        width: 70%;
+        float: left;
+    }
+
+    #asideContact {
+        float: right;
+        width: 30%;
+    }
+
+    #asideContact img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -380,6 +395,14 @@ table {
     .pricing aside img {
         width: 100%;        
     }
+
+    #contactContent {
+        width: 100%;
+    }
+
+    #asideContact img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
@@ -536,5 +559,19 @@ table {
 
     #pricingAside1 {
         display: none;
+    }
+
+    #contactContent {
+        width: 80%;
+        float: left;
+    }
+
+    #asideContact {
+        float: right;
+        width: 20%;
+    }
+
+    #asideContact img {
+        width: 100%;
     }
 }
