@@ -6,6 +6,7 @@
     color: #FFF;
     background-color: #fa0;
     opacity: 50%;
+    z-index: 9999;
 }
 
 .article1 {grid-area: article1;}
@@ -19,16 +20,24 @@
 .product3 {grid-area: product3;}
 
 table {
-    border: 3px #000 solid;
+    border: 10px #000 double;
     caption-side: bottom;
 }
 
 body {
     background-color: #FF775F;
+    letter-spacing: 1.25px;
+    font-family: Arial, Helvetica, sans-serif;
 } 
-
 main {
     background-color: #FFF;
+    line-height: 1.25em;
+    
+}
+
+.contentIndex p, .articles p {
+    text-indent: 30%;
+
 }
 
 #pc-tablet-menu li:hover {
@@ -37,6 +46,22 @@ main {
 
 #pc-tablet-menu a.active {
     background-color: #00137F;
+}
+
+.websiteHeader::after {
+    content: "";
+    clear: both;
+    display: table;        
+}
+
+.websiteHeader h2 {
+    position: absolute;
+    top: 125px;
+    left: 35%;
+}
+
+header h1 {
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1280px) {
@@ -53,13 +78,7 @@ main {
         margin-right: auto;
         display: flex;
         align-items: center;
-    }
-
-    .websiteHeader::after {
-        content: "";
-        clear: both;
-        display: table;        
-    }
+    }    
 
     .websiteHeader img {
         width: 10%;
@@ -72,63 +91,42 @@ main {
         font-size: 4vw;
     }
 
-    .websiteHeader h2 {
-        position: absolute;
-        top: 125px;
-        left: 35%;
-    }     
-
-    .articles {
-        display: grid;
-        grid-template-areas:
-            "article2 article1 article3"
-            "article2 article1 article3"
-            "article5 article1 article3"
-            "article5 article1 article4"
-            "article5 article1 article4"
-            "article5 article1 article4"
-            "article5 article6 article6";        
-    }
-
-    .articles article {        
-        padding: 10px;
-        margin: auto;
-    }
-
-    .asideProduct {
-        display: grid;
-        gap: 25px;
-        grid-template-areas: 
-        "product1 product2 product3"
-        "product1 product2 product3";
-    }    
-    
-    .asideProduct a img {
-        width: 100%;
-    }
-
-    .pricing {
-        display: grid;
-        grid-template-columns: 90% 10%;
-        gap: 10px;
-    }
-
-    .pricing table {
-        grid-column: 1;
-    }
-
-    .pricing aside {
-        grid-column: 2;
-    }
-
-    .pricing aside img {
-        width: 100%;
-    }
-
     #mobile-menu {
         display: none;
     }
 
+    #pc-tablet-menu ul {
+        list-style-type: none;
+        background-color: #ff2600;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #pc-tablet-menu li {
+        float: left;
+        width: 25%;
+    }
+
+    #pc-tablet-menu li a {
+        display: block;
+        color: #FFF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.5vw;
+    }
+
+    body > footer {
+        display: block;
+        background-color: #FFF;
+        word-spacing: 10px;
+        padding: 30px;
+        width: 100%;
+    }
+    
+    /*Style for index page*/
     #indexPage {
         display: flex;
         flex-wrap: wrap;
@@ -166,29 +164,57 @@ main {
         width: 100%;
     }
 
-    #pc-tablet-menu ul {
-        list-style-type: none;
-        background-color: #ff2600;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
+    /*Style for product page*/
+    .articles {
+        display: grid;
+        grid-template-areas:
+            "article2 article1 article3"
+            "article2 article1 article3"
+            "article5 article1 article3"
+            "article5 article1 article4"
+            "article5 article1 article4"
+            "article5 article1 article4"
+            "article5 article6 article6";        
+    }
+
+    .articles article {        
+        padding: 10px;
+        margin: auto;
+    }
+
+    .asideProduct {
+        display: grid;
+        gap: 25px;
+        grid-template-areas: 
+        "product1 product2 product3"
+        "product1 product2 product3";
+    }    
+    
+    .asideProduct a img {
         width: 100%;
     }
 
-    #pc-tablet-menu li {
-        float: left;
-        width: 25%;
+    /*Style for pricing page*/
+
+    .pricing {
+        display: grid;
+        grid-template-columns: 90% 10%;
+        gap: 10px;
     }
 
-    #pc-tablet-menu li a {
-        display: block;
-        color: #FFF;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 1.5vw;
-    }   
+    .pricing table {
+        grid-column: 1;
+    }
 
+    .pricing aside {
+        grid-column: 2;
+    }
+
+    .pricing aside img {
+        width: 100%;
+    }
+    
+    /*Style for contact page*/
     #contactContent {
         width: 70%;
         float: left;
@@ -201,15 +227,7 @@ main {
 
     #asideContact img {
         width: 100%;
-    }
-
-    body > footer {
-        display: block;
-        background-color: #FFF;
-        padding: 30px;
-        width: 100%;
-    }
-
+    }    
 }
 
 @media screen and (max-width: 480px) {
@@ -411,13 +429,7 @@ main {
         height: 175px;        
         display: flex;
         align-items: center;
-    }
-
-    .websiteHeader::after {
-        content: "";
-        clear: both;
-        display: table;        
-    }
+    }    
 
     .websiteHeader img {
         width: 100px;
@@ -428,13 +440,7 @@ main {
     .websiteHeader h1 {
         padding: 0.5em;
         font-size: 2.5em;
-    }
-
-    .websiteHeader h2 {
-        position: absolute;
-        top: 125px;
-        left: 35%;
-    }
+    }    
 
     #mobile-menu {
         display: none;        
