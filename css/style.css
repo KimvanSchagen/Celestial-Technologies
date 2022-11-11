@@ -24,6 +24,18 @@ table {
     caption-side: bottom;
 }
 
+tr:first-child {
+    background-color: #FF0;
+}
+
+tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+tr:nth-child(odd) {
+    background-color: FFF;
+}
+
 body {
     background-color: #FF775F;
     letter-spacing: 1.25px;
